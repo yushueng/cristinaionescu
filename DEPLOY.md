@@ -1,27 +1,18 @@
 # Push su Git e deploy su Vercel
 
-## 1. Crea il repository su GitHub
+**Repo:** [github.com/yushueng/cristinaionescu](https://github.com/yushueng/cristinaionescu)  
+**Progetto:** CristinaIonescu (cartella `CristinaIonescu`)
 
-1. Vai su [github.com/new](https://github.com/new)
-2. Nome repo (es. `test-salone-estetista` o `cristina-ionescu-site`)
-3. **Non** inizializzare con README (il progetto esiste già)
-4. Clicca **Create repository**
+## 1. Push su GitHub
 
-## 2. Collega il progetto e fai push
-
-Nella cartella del progetto esegui (sostituisci `TUO-USER` e `NOME-REPO` con i tuoi):
+Il remote `origin` è già configurato. Dalla cartella del progetto:
 
 ```bash
-git remote add origin https://github.com/TUO-USER/NOME-REPO.git
+cd /Users/yushuengwu/CristinaIonescu
 git push -u origin main
 ```
 
-Se usi SSH:
-
-```bash
-git remote add origin git@github.com:TUO-USER/NOME-REPO.git
-git push -u origin main
-```
+Se il repo su GitHub è vuoto e non ha ancora un branch `main`, la prima push creerà il branch. Se GitHub ti chiede di creare prima il repo, crealo con nome **cristinaionescu** (senza README), poi ripeti il push.
 
 ## 3. Deploy su Vercel
 
